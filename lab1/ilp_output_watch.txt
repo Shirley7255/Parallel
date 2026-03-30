@@ -1,0 +1,2 @@
+n	runs	naive(ms)	unrolled(ms)	speedup	naive_total	unrolled_total
+1024	2000000	5968.39	6273.77	0.951323	2.048e+09	2.048e+09
