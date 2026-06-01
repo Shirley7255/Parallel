@@ -1,0 +1,41 @@
+Algorithm,N,Threads,Time(ms)
+Serial,256,1,5.42069
+NEON,256,1,1.8501
+Serial,512,1,57.6104
+NEON,512,1,19.0253
+OpenMP,512,2,123.407
+Pthread,512,2,165.576
+OpenMP,512,4,57.4172
+Pthread,512,4,84.0072
+OpenMP,512,8,29.6236
+Pthread,512,8,57.078
+Pthread+NEON,512,2,55.1568
+Pthread+NEON,512,4,34.3277
+Pthread+NEON,512,8,30.751
+Serial,1024,1,445.408
+NEON,1024,1,149.378
+OpenMP,1024,2,736.364
+Pthread,1024,2,1057.95
+OpenMP,1024,4,375.41
+Pthread,1024,4,525.715
+OpenMP,1024,8,173.311
+Pthread,1024,8,330.036
+Pthread+NEON,1024,2,349.589
+Pthread+NEON,1024,4,220.163
+Pthread+NEON,1024,8,140.135
+Serial,2048,1,3466.54
+[Profiling Report for N=2048]
+外层除法与赋值耗时: 76.8541 ms
+内层矩阵消去更新耗时: 3489.5 ms
+NEON,2048,1,1211.51
+OpenMP,2048,2,5226.96
+Pthread,2048,2,3966.29
+OpenMP,2048,4,2229.47
+Pthread,2048,4,3713.96
+OpenMP,2048,8,1113.82
+Pthread,2048,8,2335.69
+Pthread+NEON,2048,2,2979.56
+Pthread+NEON,2048,4,1667.11
+Pthread+NEON,2048,8,933.472
+
+Authorized users only. All activities may be monitored and reported.
